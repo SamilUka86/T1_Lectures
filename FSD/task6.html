@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <fieldset style="background-color: blanchedalmond;">
+            <legend>User Detail</legend>
+            <label for="a1">Name:</label>
+            <input type="text" id="a1" name="uname" placeholder="Enter name" required  >
+            <br>
+            <label for="a2">Password:</label>
+            <input type="password"  placeholder="Enter password" >
+            <br>
+            Email:  <input type="email" name="email"  placeholder="Enter Email">
+            <br>
+            Phone number: <input type="tel" name="PHONE"  placeholder="Enter phone number">
+            <br>
+            Gender: <input type="radio" checked name="gen" value="Male">Male
+             <input type="radio"  name="gen" value="Female">Female
+            <br>
+            Hobbies:
+            <input type="checkbox" name="hob" value="Music">Music
+            <input type="checkbox" name="hob" value="Reading">Reading
+            <br>
+        </fieldset>
+        <fieldset  style="background-color:blanchedalmond;">
+            <legend>Additional Data</legend>
+            Date of birth: <input type="date" name="DOB" min="2025-09-07" max="2026-09-07">
+           <br>
+            Age: <input type="number" min="0" max="110" name="AGE" step="4">
+            <br>
+            Favorite color: <input type="color" name="favcolor"  value="#0000FF">
+            <br>
+            Preferred Sport <input list="Sports" name="PSport">
+            <br>
+            <datalist id="Sports">
+                <option value="Cricket">
+                <option value="Hockey">
+                <option value="Football">
+            </datalist>
+            <br>
+            Branch:<select name="Branch">
+                <option value="select" selected hidden>Select branch</option>
+                <optgroup label="computer">
+                    <option value="CE">CE</option>
+                    <option value="IT">IT</option>
+                </optgroup>
+                <optgroup label="other">
+                    <option value="EC">EC</option>
+                    <option value="Civil">Civil</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <br>
+        Remark <textarea name="msg" rows="5" cols="20" placeholder="Enter your message" style="background-color: bisque;"></textarea>
+        <br>
+        Range <input type="range" min="2" max="20" name="r" step="5">
+        <br>
+        <input type="hidden" name="ghost" value="1234">
+        <br>
+            <input type="Submit" style=" background-color: chartreuse;">
+            <input type="reset" style=" background-color:red ; font-weight: bold; color: bisque;"> 
+        </form>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Upload Files</legend>
+            <input type="file" name="resume" accept=".pdf,.doc" multiple>
+            </fieldset>
+        </form>
+        </body>
+</html>
